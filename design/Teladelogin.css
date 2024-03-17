@@ -23,7 +23,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100px; /* Ajuste conforme necessário */
+    height: 110px; /* Ajuste conforme necessário */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,20 +33,16 @@ header {
     backdrop-filter: blur(2px); 
 }
 
-.logo-container img, .logo-modal {
-    height: 50px; /* Ajuste conforme necessário */
+.logo-container img{
+    height: 80px; /* Ajuste conforme necessário */
     align-items: center;
 }
 
-.login-btn {
-    background-color: #E15100; /* Cor laranja */
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    padding-left: 30px;
-    color: white;
-    cursor: pointer;
+.logo-modal {
+    height: 80px;
+
 }
+
 
 .login-modal {
     display: none; /* Esconde inicialmente */
@@ -55,18 +51,17 @@ header {
     left: 0;
     height: 100%;
     width: 100%;
-    backdrop-filter: blur(2px); /* Efeito de borrão */
     z-index: 99; /* Logo abaixo do cabeçalho */
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.smallogo{
-    align-items: center;
-    padding-left: 100px;
-}
+
+
 .login-box {
+    margin-top: 50px;
     background-color: rgba(255, 255, 255, 0.534);
+    backdrop-filter: blur(2px);
     padding: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -89,9 +84,8 @@ header {
     flex-direction: column;
 }
 
-.login-box input[type="text"],
-.login-box input[type="password"] {
-    margin-bottom: 10px; /* Espaço abaixo dos campos de input */
+.login-box input[type="text"], .login-box input[type="password"] {
+    margin-bottom: 20px; /* Espaço abaixo dos campos de input */
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 10px;
@@ -102,7 +96,7 @@ header {
     background-color: #E15100; /* Cor laranja */
     border: none;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 10px 0px;
     color: white;
     cursor: pointer;
     margin-top: 10px;
